@@ -1,0 +1,122 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body, html {
+    height: 100%;
+    display: grid;
+    background-color: #404552;
+}
+p {
+    margin: 0;
+}
+
+.content {
+    margin: auto;
+    line-height: 1.4;
+    max-width: 768px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.banner, .search {
+    border: solid #202229;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #323843;
+    
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.banner .title {
+    font-size: 3em;
+    font-weight: 700;
+
+    margin: 0 auto;
+}
+.search {
+    padding: 1rem;
+    width: 100%;
+}
+.search:focus, .search:hover {
+    border: solid 1px #5294E2;
+    outline: none;
+    transition: 0.3s;
+}
+
+.linkgrid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    border: solid #202229;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #323843;
+
+    padding: 1rem;
+}
+.link {
+    /* Arc border */
+    /* border: solid #202229;
+    border-width: 1px;
+    border-radius: 3px; */
+    
+    /* No border */
+    border: solid #00000000;
+    border-width: 0px;
+    border-radius: 3px;
+
+    color: white;
+    background-color: #404552;
+
+    padding: 1rem;
+
+    min-height: 150px;
+}
+.link .title {
+    font-size: 1.5em;
+}
+.link a {
+    text-decoration: none;
+    color: white;
+}
+.link p:first-of-type {
+    padding-bottom: 1rem;
+}
+.link:hover {
+    cursor: pointer;
+}
+
+.footer {
+    border: solid #202229;
+    border-width: 1px;
+    border-radius: 3px;
+    background-color: #323843;
+
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.footer .disclaimer {
+    font-size: 0.9em;
+    color: grey;
+}
+
+.nextcloud {
+    background-image: url("../img/nc-blur.png");
+    background-size: cover; /* cover or contain */
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.gitea {
+    background-color: #2ecc71;
+}
+.github {
+    background-color: #24292e;
+}
+.gitlab {
+    background-color: #e65328;
+}
