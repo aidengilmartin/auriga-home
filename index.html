@@ -1,64 +1,88 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#404552" /> <!-- Chrome Custom Colours -->
     <title>Auriga Home</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+        integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
     <link href="css/arc-dark.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet"> 
+    <link href="css/animate.css" rel="stylesheet">
     <script src="js/search.js"></script>
 </head>
+
 <body>
 
     <div class="content animated fadeIn">
 
-         <div class="banner">
+        <div class="banner">
             <p class="title">Auriga</p>
         </div>
 
         <input class="search" id="search" placeholder="Search DuckDuckGo">
-            
+
         <div class="grid linkgrid">
-            
+
             <div class="link nextcloud">
                 <a href="https://cloud.auriga.tech">
-                    <p class="title">Cloud</p>
-                    <p>Store files and access them anywhere. Sync contacts to your phone, write notes and more.</p>
+                    <div class="main">
+                        <p class="title">Cloud</p>
+                        <p>Store files and access them anywhere. All selfhosted.</p>
+                    </div>
                 </a>
+                <div class="shortcuts">
+                    <a href="https://cloud.auriga.tech/apps/calendar/">Calendar</a>
+                    <a href="https://cloud.auriga.tech/apps/contacts/">Contacts</a>
+                    <a href="https://cloud.auriga.tech/apps/deck/">Decks</a>
+                </div>
             </div>
-            
-            <div class="link gitea">
-                <a href="https://git.auriga.tech">
-                    <p class="title">Git</p>
-                    <p>Fully featured private Git repositories for whenever some version control magic is needed.</p>
-                </a>
-            </div>
-                    
+
             <div class="link github">
                 <a href="https://github.com">
-                    <p class="title">GitHub</p>
-                    <p>Free public repositories for all! The industry standard for hosted Git.</p>
+                    <div class="main">
+                        <p class="title">GitHub</p>
+                        <p>Free public repositories for all! The industry standard for hosted Git.</p>
+                    </div>
+                    
+                </a>
+                <div class="shortcuts">
+                    <a href="https://github.com/aidengilmartin?tab=repositories">Repositories</a>
+                    <a href="https://github.com/aidengilmartin?tab=stars">Stars</a>
+                    <a href="https://github.com/issues">Issues</a>
+                </div>
+            </div>
+
+            <div class="link gitea">
+                <a href="https://git.auriga.tech">
+                    <div class="main">
+                        <p class="title">Git</p>
+                        <p>Fully featured private Git repositories for whenever some version control magic is needed.</p>
+                    </div>
                 </a>
             </div>
 
             <div class="link gitlab">
                 <a href="https://gitlab.com">
-                    <p class="title">GitLab</p>
-                    <p>The other big hosted Git service that isn't owned by Microsoft.</p>
+                    <div class="main">
+                        <p class="title">GitLab</p>
+                        <p>The other big hosted Git service that isn't owned by Microsoft.</p>
+                    </div>
                 </a>
             </div>
-                
+
         </div>
-            
+
         <div class="footer">
-            <p class="disclaimer">Auriga is an educational project and any services hosted are not available for use by the public.</p>
+            <p class="disclaimer">Auriga is an educational project and any services hosted are not available for use by
+                the public.</p>
         </div>
 
     </div>
 
 </body>
+
 </html>

@@ -20,6 +20,10 @@ body, html {
 p {
     margin: 0;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 
 .content {
     margin: auto;
@@ -68,34 +72,54 @@ p {
 }
 .link {
     /* Arc border */
-    /* border: solid #202229;
+    border: solid #202229;
     border-width: 1px;
-    border-radius: 3px; */
+    border-radius: 3px;
     
     /* No border */
-    border: solid #00000000;
+    /* border: solid #00000000;
     border-width: 0px;
-    border-radius: 3px;
+    border-radius: 3px; */
 
     color: white;
     background-color: #404552;
-
-    padding: 1rem;
-
     min-height: 150px;
 }
-.link .title {
+
+.title {
     font-size: 1.5em;
 }
-.link a {
-    text-decoration: none;
-    color: white;
+
+.main {
+    padding: 1rem;
+    height: 130px;
 }
-.link p:first-of-type {
+
+.main:hover {
+    cursor: pointer;
+}
+
+.main .title {
     padding-bottom: 1rem;
 }
-.link:hover {
-    cursor: pointer;
+
+.shortcuts {
+    padding: 1rem;
+    border-top: solid #202229;
+    border-width: 1px;
+    background-color: #404552;
+    opacity: .5;
+    transition: 250ms ease-in-out;
+}
+
+.shortcuts:hover {
+    transition-delay: 10ms;
+    transition: 250ms ease-in-out;
+    opacity: 1;
+}
+
+.shortcuts a {
+    margin-right: 1rem;
 }
 
 .footer {
