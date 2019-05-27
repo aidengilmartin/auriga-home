@@ -54,11 +54,12 @@ a {
 .search {
     padding: 1rem;
     width: 100%;
+    transition: 0.3s ease-in-out;
 }
 .search:focus, .search:hover {
     border: solid 1px #5294E2;
     outline: none;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .linkgrid {
