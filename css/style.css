@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src:
+        local('Noto Sans'),
+        local('NotoSans-Regular'),
+        url('../fonts/NotoSans-Regular.ttf');
+}
+
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
